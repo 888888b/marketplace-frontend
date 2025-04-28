@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Raleway } from "next/font/google";
+
+import NavigationBar from '@/components/molecules/navigationBar';
+import Footer from '@/components/organisms/footer';
+
 import "./globals.css";
 
 const inter = Inter({
@@ -26,10 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${raleway.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${raleway.variable} antialiased`}>
         {children}
+        <Footer/>
+        <NavigationBar/>
       </body>
     </html>
   );
