@@ -10,7 +10,9 @@ export default function CategoriesCarousel( props: ComponentProps ) {
     return (
         <div className={`${props.className} text-secondary-text font-medium text-[15px]`}>
             {/* carousel de categorias  */}
-            <EmblaSlides className="gap-x-5" dragFree={true}>
+            <EmblaSlides 
+                className="gap-x-5" 
+                options={{progressBar: true, dragFree: true}}>
                 <div className="embla__slide">
                     <Image
                         src={'/food_icon.png'}
