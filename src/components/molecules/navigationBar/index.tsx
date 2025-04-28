@@ -1,11 +1,11 @@
 import { 
     IoHome,
-    IoHomeOutline,
-    IoBookmark,
-    IoBookOutline,
-    IoCart,
+    // IoHomeOutline,
+    // IoBookmark,
+    // IoBookOutline,
+    // IoCart,
     IoCartOutline,
-    IoSearch,
+    // IoSearch,
     IoSearchOutline,
     IoBookmarkOutline
 } from "react-icons/io5";

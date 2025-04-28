@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { EmblaOptionsType } from 'embla-carousel';
 import { DotButton } from '@/components/atoms/dotButton';
 import { useDotButton } from '@/hooks/embla/useDotButton';
-import Autoplay, { AutoplayOptionsType } from 'embla-carousel-autoplay';
+import Autoplay, { AutoplayOptionsType, AutoplayType } from 'embla-carousel-autoplay';
 import './styles.css';
 
 type EmblaOptions = EmblaOptionsType & {
@@ -25,9 +25,9 @@ export default function EmblaSlides( props: ComponentProps ) {
 
   const [progress, setProgress] = useState( 0 );
   const { className, options, children } = props;
-  const emblaPlugins: any[] = [];
-  if (options?.autoplay) emblaPlugins.push(Autoplay(options.autoplayOptions));
-  const [emblaRef, emblaApi] = useEmblaCarousel( options, emblaPlugins );
+  const autoplayPlugin: AutoplayType[] = [];
+  if (options?.autoplay) autoplayPlugin.push(Autoplay(options.autoplayOptions));
+  const [emblaRef, emblaApi] = useEmblaCarousel( options, autoplayPlugin );
   const {
     selectedIndex,
     scrollSnaps,
