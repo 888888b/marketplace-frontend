@@ -7,7 +7,7 @@ type ComponentProps = {
 
 export default function FeaturesCarousel( props: ComponentProps ) {
     return (
-        <div className={`${props} px-4 features-carousel`}>
+        <div className={`${props.className} px-4 features-carousel`}>
             <h1 className="text-xl font-bold text-primary">
                 Em destaque
             </h1>
