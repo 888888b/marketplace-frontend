@@ -18,7 +18,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/food_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={32}
+                            height={32}
                             className="object-cover"
                         />
                     </div>
@@ -30,7 +31,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/crane_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={30}
+                            height={30}
                             className="object-cover"
                         />
                     </div>
@@ -42,7 +44,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/bag_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={30}
+                            height={30}
                             className="object-cover"
                         />
                     </div>
@@ -54,7 +57,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/supermarket_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={30}
+                            height={30}
                             className="object-cover"
                         />
                     </div>
@@ -67,7 +71,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/laptop_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={30}
+                            height={30}
                             className="object-cover"
                         />
                     </div>
@@ -79,7 +84,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/service_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={30}
+                            height={30}
                             className="object-cover"
                         />
                     </div>
@@ -91,7 +97,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/health_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={30}
+                            height={30}
                             className="object-cover"
                         />
                     </div>
@@ -103,7 +110,8 @@ export default function CategoriesCarousel( props: ComponentProps ) {
                         <Image
                             src={'/pets_icon.png'}
                             alt="glass and fork icon"
-                            fill={true}
+                            width={31}
+                            height={31}
                             className="object-cover"
                         />
                     </div>
