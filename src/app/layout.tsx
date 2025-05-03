@@ -3,6 +3,7 @@ import { Inter, Raleway } from "next/font/google";
 
 import NavigationBar from '@/components/molecules/navigationBar';
 import Footer from '@/components/organisms/footer';
+import { ToastContainer } from "react-toastify";
 
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         {children}
         <Footer/>
         <NavigationBar/>
+        <ToastContainer/>
       </body>
     </html>
   );
