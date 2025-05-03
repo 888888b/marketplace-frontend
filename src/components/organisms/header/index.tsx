@@ -11,8 +11,8 @@ export default function Header() {
             {/* linha 1, nome, localização e foto de usuario */}
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start">
-                    <WelcomePhrase userName="Vitor"/>
-                    <UserLocation city="Iaciara - GO"/>
+                    <WelcomePhrase/>
+                    <UserLocation/>
                 </div>
 
                 <UserImage url="/user_fake_image.jpg" name="Vitor"/>
@@ -22,7 +22,7 @@ export default function Header() {
             <SearchInput className="mt-3.5"/>
 
             {/* linha 3, titulo da seção */}
-            <SectionTitle title="Lojas em Iaciara - GO" className="mt-7"/>
+            <SectionTitle title="Todas as categorias" className="mt-7"/>
 
             {/* linha 4, barra de categorias de lojas */}
             <CategoriesCarousel className="mt-7"/>
