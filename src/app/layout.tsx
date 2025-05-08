@@ -4,6 +4,7 @@ import { Inter, Raleway } from "next/font/google";
 import NavigationBar from '@/components/molecules/navigationBar';
 import Footer from '@/components/organisms/footer';
 import { ToastContainer } from "react-toastify";
+import { UserProvider } from "@/contexts/userContext";
 
 import "./globals.css";
 
@@ -32,10 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${raleway.variable} antialiased`}>
-        {children}
-        <Footer/>
-        <NavigationBar/>
-        <ToastContainer/>
+        <UserProvider>
+          {children}
+          <Footer/>
+          <NavigationBar/>
+          <ToastContainer/>
+        </UserProvider>
       </body>
     </html>
   );
