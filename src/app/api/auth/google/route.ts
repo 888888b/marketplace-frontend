@@ -1,5 +1,6 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET() {
-    return NextResponse.redirect('https://localhost:3000');
+export async function GET( request: NextRequest ) {
+    const baseUrl = request.nextUrl.clone().origin;
+    return NextResponse.redirect(baseUrl);
 };
