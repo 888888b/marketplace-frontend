@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    } to {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+header.fixed-header {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+header.out-of-viewport {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+header.in-viewport {
+    pointer-events: initial;
+    animation: fadeIn 0.2s ease-in forwards;
+}
