@@ -10,7 +10,7 @@ type ComponentProps = {
 export default function ProductsSection( props: ComponentProps ) {
     return (
         <section className={`px-4 ${props.className}`}>
-            <div className="bg-card-background rounded-[10px] shadow-[0_5px_30px_rgba(0,0,0,0.20)] p-3">
+            <div className="bg-card-background rounded-[20px] shadow-[0_5px_30px_rgba(0,0,0,0.20)] p-3">
                 <div className="flex justify-between items-center">
                     {/* titulo da seção */}
                     <SectionTitle title="Materiais para construção" />

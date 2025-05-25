@@ -47,12 +47,19 @@ export default function LocationModal( props: ComponentProps ) {
 
     return (
         <>
-            <button
-                className="flex items-center gap-x-1.5 border-0 outline-0 cursor-pointer text-lg text-primary-action flex-nowrap line-clamp-1 whitespace-nowrap"
-                onClick={() => modalRef.current?.showModal()}>
-                <FaLocationDot/>
-                { city ? city : 'Informar localização' }
-            </button>
+            <div>
+                <h3 className="font-medium text-[15px] text-secondary-text">
+                    Lojas em
+                </h3>
+                <button
+                    className="flex items-center gap-x-1.5 border-0 outline-0 cursor-pointer text-[17px] text-primary-action flex-nowrap font-medium line-clamp-1 -translate-x-0.5"
+                    onClick={() => modalRef.current?.showModal()}>
+                    <FaLocationDot/>
+                    <span className='max-w-[40vw] truncate'>
+                        { city ? city : 'Informar local' }
+                    </span>
+                </button>
+            </div>
 
             <dialog ref={modalRef} id="my_modal_1" className="modal">
                 <div className="bg-card-background w-full max-w-96 rounded-[10px] px-4 py-14 flex items-center justify-center flex-col gap-y-5 relative">
@@ -67,7 +74,7 @@ export default function LocationModal( props: ComponentProps ) {
                             type="text"
                             maxLength={8}
                             required placeholder='Ex: 12345678'
-                            className='h-12 rounded-md border-primary-action border-[0.1rem] outline-0 w-full px-4 placeholder:text-secondary-text text-primary'
+                            className='h-12 rounded-[30px] border-primary-action border-[0.1rem] outline-0 w-full px-4 placeholder:text-secondary-text text-primary'
                             {...register("zipcode")}
                             />
                             {/* erro na validação */}
@@ -78,8 +85,8 @@ export default function LocationModal( props: ComponentProps ) {
                             )}
                         </div>
                         
-                        <button type="submit" className='btn btn-lg rounded-md bg-primary-action border-0 outline-0 font-normal text-base text-white'>
-                            Continuar
+                        <button type="submit" className='btn btn-lg rounded-[30px] bg-primary-action border-0 outline-0 font-normal text-sm text-white active:scale-95 transition-transform duration-200'>
+                            CONTINUAR
                         </button>
                     </form>
                     {/* fechar modal */}     

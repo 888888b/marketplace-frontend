@@ -6,7 +6,7 @@ type ComponentProps = {
 
 export default function SearchInput( props: ComponentProps ) {
     return (
-        <div className={`text-primary rounded-3xl px-4 bg-background-page flex items-center gap-x-1.5 ${props.className}`}>
+        <div className={`text-primary rounded-3xl px-4 bg-[rgba(0,0,0,0.08)] flex items-center gap-x-1.5 ${props.className}`}>
             <IoSearchOutline className="text-3xl text-secondary-text" />
             <input
                 type="text"

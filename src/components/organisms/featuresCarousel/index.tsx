@@ -16,7 +16,6 @@ export default function FeaturesCarousel( props: ComponentProps ) {
                 options={{
                     progressBar: false, 
                     dotNavigation: true, 
-                    loop: true,
                     autoplay: true, 
                     autoplayOptions: { stopOnInteraction: false }
                 }} 
@@ -31,8 +30,8 @@ export default function FeaturesCarousel( props: ComponentProps ) {
                         <p className="text-base text-secondary-text">
                             Hamburgueres, Jantinhas, espetinhos e muito mais!
                         </p>
-                        <button className="bg-primary-action btn btn-lg w-48 rounded-3xl text-base font-normal text-white">
-                            Ver loja
+                        <button className="bg-primary-action btn btn-lg w-44 rounded-3xl text-sm font-medium text-white active:scale-95 transition-transform duration-200 border-0 outline-0">
+                            VER LOJA
                         </button>
                     </div>
                 </div>
@@ -47,8 +46,8 @@ export default function FeaturesCarousel( props: ComponentProps ) {
                         <p className="text-base text-secondary-text">
                             Ofertas imperdiveis toda quinta feira!
                         </p>
-                        <button className="bg-primary-action btn btn-lg w-48 rounded-3xl text-base font-normal text-white">
-                            Ver loja
+                        <button className="bg-primary-action btn btn-lg w-44 rounded-3xl text-sm font-medium text-white active:scale-95 transition-transform duration-200 border-0 outline-0">
+                            VER LOJA
                         </button>
                     </div>
                 </div>
@@ -63,8 +62,8 @@ export default function FeaturesCarousel( props: ComponentProps ) {
                         <p className="text-base text-secondary-text">
                             Tudo de construção para sua obra!
                         </p>
-                        <button className="bg-primary-action btn btn-lg w-48 rounded-3xl text-base font-normal text-white">
-                            Ver loja
+                        <button className="bg-primary-action btn btn-lg w-44 rounded-3xl text-sm font-medium text-white active:scale-95 transition-transform duration-200 border-0 outline-0">
+                            VER LOJA
                         </button>
                     </div>
                 </div>
@@ -79,8 +78,8 @@ export default function FeaturesCarousel( props: ComponentProps ) {
                         <p className="text-base text-secondary-text line-clamp-2">
                             Sempre cuidando da sua saude, medicamentos gratis via farmacia popular!
                         </p>
-                        <button className="bg-primary-action btn btn-lg w-48 rounded-3xl text-base font-normal text-white">
-                            Ver loja
+                        <button className="bg-primary-action btn btn-lg w-44 rounded-3xl text-sm font-medium text-white active:scale-95 transition-transform duration-200 border-0 outline-0">
+                            VER LOJA
                         </button>
                     </div>
                 </div>

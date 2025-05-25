@@ -1,6 +1,16 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: false
+  themes: "custom-light-theme" --default
+}
+
+/* cores necessarias para animações do daisy ui */
+@plugin "daisyui/theme" {
+  name: custom-light-theme;
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+  --color-base-300: #e5e7eb;
+  --color-base-100: #ffffff;
 }
 
 /* cores e fontes utilizadas no projeto */

@@ -12,12 +12,13 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     width: 100vw;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
     max-width: calc(100vw - 32px);
 }
 
 .features-carousel .embla__slide button {
-    margin-bottom: 26px;
+    margin-bottom: 30px;
     margin-top: 5px;
 }
